@@ -18,8 +18,8 @@ class HomeController < ApplicationController
 		url = "#{src}?code=#{code}&campaignId=#{campaignId}"
 		Rails.logger.debug "URL: #{url}"
 
-		#response = HTTParty.get(url)
-		#Rails.logger.debug "Response: #{response}"
+		response = HTTParty.get(url)
+		Rails.logger.debug "Response: #{response}"
 	end
 
 end
